@@ -39,7 +39,7 @@ namespace dio_desafio_github_repositorio
                 Console.WriteLine("X - Sair");
                 Console.WriteLine();
 
-                userOption = Console.ReadLine();
+                userOption = Console.ReadLine(); 
             }
         }
     }
