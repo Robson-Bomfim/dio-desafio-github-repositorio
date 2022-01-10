@@ -1,0 +1,14 @@
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.exe
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.deps.json
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.runtimeconfig.json
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.runtimeconfig.dev.json
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.dll
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\bin\Debug\netcoreapp3.1\dio-desafio-github-repositorio.pdb
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.csproj.AssemblyReference.cache
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.AssemblyInfoInputs.cache
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.AssemblyInfo.cs
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.csproj.CoreCompileInputs.cache
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.dll
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.pdb
+C:\Users\robso\Desktop\LocalizaLabs .NET Developer #2\Primeiros passos com .NET\dio-desafio-github-repositorio\obj\Debug\netcoreapp3.1\dio-desafio-github-repositorio.genruntimeconfig.cache
