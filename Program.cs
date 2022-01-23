@@ -11,74 +11,80 @@ namespace dio_desafio_github_repositorio
             List<Student> students = new List<Student>();
             string userOption = GetUserOption();
 
-            while (userOption.ToUpper() != "X")
+            try
             {
-                switch (userOption)
+                while (userOption.ToUpper() != "X")
                 {
-                    case "1":
-                        Student student = new Student();
-                        Console.WriteLine("Informe o nome do aluno");
-                        student.Name = Console.ReadLine();
-                        Console.WriteLine("Informe a nota do aluno");
-
-                        if (double.TryParse(Console.ReadLine(), out double grade))
-                        {
-                            student.Grade = grade;
-                        }
-                        else
-                        {
-                            throw new ArgumentException("Valor da nota deve ser double!");
-                        }
-
-                        students.Add(student);
-                        break;
-                    case "2":
-                        Console.WriteLine("Lista de alunos: ");
-                        Console.WriteLine();
-                        if (students.Count == 0)
-                        {
-                            Console.WriteLine("Nenhum aluno cadastrado.");
-                        }
-                        else
-                        {
-                            foreach (Student s in students)
+                    switch (userOption)
+                    {
+                        case "1":
+                            Student student = new Student();
+                            Console.WriteLine("Informe o nome do aluno");
+                            student.Name = Console.ReadLine();
+                            Console.WriteLine("Informe a nota do aluno");
+                            student.Grade = double.Parse(Console.ReadLine());
+                            students.Add(student);
+                            break;
+                        case "2":
+                            Console.WriteLine("Lista de alunos: ");
+                            Console.WriteLine();
+                            if (students.Count == 0)
                             {
-                                if (s != null)
+                                Console.WriteLine("Nenhum aluno cadastrado.");
+                            }
+                            else
+                            {
+                                students.Sort((p1,p2)=>p1.Name.ToUpper().CompareTo(p2.Name.ToUpper()));
+                                foreach (Student s in students)
                                 {
-                                    Console.WriteLine($"ALUNO: {s.Name} - NOTA: {s.Grade}");
+                                    if (s != null)
+                                    {
+                                        Console.WriteLine($"ALUNO: {s.Name} - NOTA: {s.Grade}");
+                                    }
                                 }
                             }
-                        }
-                        break;
-                    case "3":
-                        if (students.Count == 0)
-                        {
-                            Console.WriteLine("Nenhum aluno cadastrado.");
-                        }
-                        else
-                        {
-                            double amount = 0.0;
-                            Console.WriteLine("Calculando média geral...");
-                            foreach (Student s in students)
+                            break;
+                        case "3":
+                            if (students.Count == 0)
                             {
-                                if (s != null)
-                                {
-                                    amount = amount + s.Grade;
-                                }
+                                Console.WriteLine("Nenhum aluno cadastrado.");
                             }
+                            else
+                            {
+                                double amount = 0.0;
+                                Console.WriteLine("Calculando média geral...");
+                                foreach (Student s in students)
+                                {
+                                    if (s != null)
+                                    {
+                                        amount = amount + s.Grade;
+                                    }
+                                }
+                                double average = amount / students.Count;
+                                Concept concept = GetConcept(average);
+                                Console.WriteLine($"MEDIA GERAL: {average.ToString("F2", CultureInfo.InvariantCulture)} - CONCEITO: {concept}");
+                            }
+                            break;
+                        default:
+                            throw new ArgumentOutOfRangeException("Opção invalida!");
+                    }
 
-                            double average = amount / students.Count;
-                            Concept concept = GetConcept(average);
-
-                            Console.WriteLine($"MEDIA GERAL: {average.ToString("F2", CultureInfo.InvariantCulture)} - CONCEITO: {concept}");
-                        }
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException("Opção invalida!");
+                    userOption = GetUserOption();
                 }
-
-                userOption = GetUserOption();
             }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
         }
 
         private static Concept GetConcept(double average)
